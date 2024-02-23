@@ -5,8 +5,8 @@ The goal of our Deep Learning Challenge is to help Alphabet Soup, a nonprofit fo
 
 ## Results - 
 * Data Preprocessing
- * Target Variable for the Model: The target variable selected for the model is the IS_SUCCESSFUL column, which indicates the success or failure of funding applications.
- * Features for the Model: The features chosen for the model include all columns from the dataset except for the IS_SUCCESSFUL column which include:  APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, and ASK_AMT. These features provide valuable information that the model will utilize to make predictions
+  * Target Variable for the Model: The target variable selected for the model is the IS_SUCCESSFUL column, which indicates the success or failure of funding applications.
+  * Features for the Model: The features chosen for the model include all columns from the dataset except for the IS_SUCCESSFUL column which include:  APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, and ASK_AMT. These features provide valuable information that the model will utilize to make predictions
  * Variables Removed from Input Data: Several variables were identified for removal from the input data as they are neither targets nor features. These variables include the EIN and NAME columns, which are identifiers with no predictive value. Additionally, preprocessing steps were applied to the APPLICATION_TYPE and CLASSIFICATION columns. For APPLICATION_TYPE, values with frequencies below 500 were grouped into an 'OTHER' category to reduce dimensionality and improve model performance. Similarly, for CLASSIFICATION, categories with frequencies under 1800 were aggregated into an 'other' category to enhance the model's predictive capabilities.
 
 * Compiling, Training, and Evaluating the Original Model
